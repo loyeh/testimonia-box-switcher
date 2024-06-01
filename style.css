@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100dvh;
+  background-color: lavender;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+  background-color: #0033ee;
+  border-radius: 10px;
+  color: #ffffffcc;
+  padding-inline: 3em;
+  padding-block: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: justify;
+}
+
+.progress {
+  width: 100%;
+}
+
+.bar {
+  height: 5px;
+  background-color: #ffffffcc;
+  animation: progress 10s linear infinite;
+}
+
+.testimonial {
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: -1.2em;
+  color: #ffffff77;
+  font-size: 1.4em;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: -1.2em;
+  color: #ffffff77;
+  font-size: 1.4em;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.image {
+  background-image: url("");
+  width: 60px;
+  height: 60px;
+  border-radius: 1000px;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.name {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .container {
+    width: 95%;
+  }
+}
