@@ -42,5 +42,3 @@ function userCreator() {
 userCreator();
 
 setInterval(userCreator, 10000);
-
-console.log(usersArr);
